@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.box1 {
+    background-color: aquamarine;
+    position: absolute;
+    left: 0;
+    transition: all 3s cubic-bezier(0.33, 1, 0.68, 1);
+    transition-duration: 3s;
+}
+
+.box2 {
+    background-color: blueviolet;
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    transition-timing-function: ease-in;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+section:hover .box1 {
+    position:absolute;
+    left: 90%;
+}
+
+section:hover .box2 {
+    position:absolute;
+    left: 90%;
+}
